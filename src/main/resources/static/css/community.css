@@ -1,0 +1,14 @@
+body{
+    background-color: #e0e0e0;
+}
+.main{
+    margin: 30px;
+    background-color: white;
+}
+.btn-publish{
+    float:right;
+    margin-bottom: 15px;
+}
+ul li{
+    list-style: none;
+}
