@@ -1,4 +1,4 @@
-package com.example.demo.controller.provider;
+package com.example.demo.provider;
 
 import com.alibaba.fastjson.JSON;
 import com.example.demo.dto.AccessTokenDTO;
