@@ -24,3 +24,7 @@ body{
 .community-menu{
     color: #999;
 }
+.jumbotron{
+    margin:50px;
+    background-color: #e0e0e0;
+}
