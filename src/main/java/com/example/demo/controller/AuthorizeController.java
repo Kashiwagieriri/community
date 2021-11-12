@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-import com.example.demo.mapper.UserMapper;
 import com.example.demo.model.User;
 import com.example.demo.provider.GithubProvider;
 import com.example.demo.dto.AccessTokenDTO;

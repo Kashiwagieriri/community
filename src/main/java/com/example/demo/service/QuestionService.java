@@ -115,8 +115,8 @@ public class QuestionService {
 
     public void createOrUpdate(Question question) {
         if (question.getId() == null){
-            question.setGmtModified(System.currentTimeMillis());
-            question.setGmtCreate(question.getGmtCreate());
+            question.setGmtCreate(System.currentTimeMillis());
+            question.setGmtModified(question.getGmtCreate());
             questionMapper.insertSelective(question);
         }else {
             Question updateQuestion = new Question();
@@ -125,7 +125,7 @@ public class QuestionService {
             updateQuestion.setDescription(question.getDescription());
             updateQuestion.setTag(question.getTag());
             QuestionExample example = new QuestionExample();
-            example.createCriteria().andCreatorEqualTo(question.getId());
+            example.createCriteria().andIdEqualTo(question.getId());
             questionMapper.updateByExampleSelective(updateQuestion, example);
         }
     }
