@@ -6,3 +6,6 @@
 [oauthsetting]https://github.com/settings/applications/1759901
 [oauthguide]https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps
 [lombok]https://projectlombok.org/
+[mybatis generator]http://mybatis.org/generator/
+mvn mybatis-generator:generate
+[thymeleaf]
