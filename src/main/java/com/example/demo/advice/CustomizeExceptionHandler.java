@@ -21,7 +21,6 @@ public class CustomizeExceptionHandler {
         String contentType = request.getContentType();
         if ("application/json".equals(contentType)) {
             ResultDTO resultDTO;
-            // 返回 JSON
             if (e instanceof CustomizeException) {
                 resultDTO = ResultDTO.errorOf((CustomizeException) e);
             } else {
@@ -38,7 +37,6 @@ public class CustomizeExceptionHandler {
             }
             return null;
         } else {
-            // 错误页面跳转
             if (e instanceof CustomizeException) {
                 model.addAttribute("message", e.getMessage());
             } else {
