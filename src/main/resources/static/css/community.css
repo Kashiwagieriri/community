@@ -5,6 +5,9 @@ body{
     margin: 30px;
     background-color: white;
 }
+.question-title{
+    margin-top:25px;
+}
 .btn-publish{
     float:right;
     margin-bottom: 15px;
@@ -26,6 +29,8 @@ body{
 }
 .community-menu{
     color: #999;
+    margin-bottom: 15px;
+    display: block;
 }
 .jumbotron{
     margin:50px;
@@ -38,4 +43,24 @@ body{
 .btn_comment{
     float: right;
     margin-bottom: 10px;
+}
+.comments{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 5px;
+}
+.comment_sp{
+    margin-top: 0px;
+}
+.menu{
+    color: #999999;
+     margin-top: 5px;
+
+}
+.menu .icon{
+    margin-right: 5px;
+    cursor: pointer;
+}
+.menu .icon:hover{
+    color: #2e6da4;
 }
