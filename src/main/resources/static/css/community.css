@@ -61,6 +61,20 @@ body{
     margin-right: 5px;
     cursor: pointer;
 }
+.menu .active{
+     color: #2e6da4;
+}
 .menu .icon:hover{
     color: #2e6da4;
+}
+.sub-comments{
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #eeeeee;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+.sub-comments .btn{
+    margin: 10px;
+    float:right;
 }
