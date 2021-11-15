@@ -43,7 +43,7 @@ function comment(e){
     comment2target(commentId,2,content);
 }
 
-function collapseComments(e){
+/*function collapseComments(e){
     var id = e.getAttribute("data-id");
     var comments = $("#comment-" + id);
     comments.toggleClass("in");
@@ -56,3 +56,4 @@ function collapseComments(e){
     var ic = $("#icon-" + id);
     ic.toggleClass("active");
 }
+*/

@@ -78,3 +78,9 @@ body{
     margin: 10px;
     float:right;
 }
+.tags{
+    margin-top: 15px;
+}
+.question-tag{
+    margin-right: 5px;
+}
