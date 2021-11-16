@@ -39,7 +39,7 @@
                     <h4 class="media-heading">
                         <a th:href="@{'/question/' + ${question.id}}" th:text="${question.title}"></a>
                     </h4>
-                    <span th:text="${question.description}"></span><br>
+<!--                    <span th:text="${question.description}"></span><br>-->
                     <span class="text-dsc">
                         <span th:text="${question.commentCount}"></span>
                         &nbsp个回复&nbsp<span th:text="${question.viewCount}"></span>&nbsp次浏览&nbsp发布时间&nbsp<span
@@ -69,7 +69,7 @@
                         </a>
                     </li>
                     <li th:if="${pagination.showNext}">
-                        <a th:href="@{/(page=${pagination.page +1})}" aria-label="Previous">
+                        <a th:href="@{/(page=${pagination.page +1})}" aria-label="Previous" >
                             <span aria-hidden="true">&gt;</span>
                         </a>
                     </li>
@@ -81,12 +81,6 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-lg-3 col-md-12">
-            <ul class="list-unstyled">
-                <li><h3>热门问题</h3></li>
-            </ul>
-        </div>
-    </div>
 </div>
 </body>
 </html>
