@@ -32,7 +32,9 @@
                         <span class="text-desc">
                         <span th:text="${question.commentCount}"></span> 个回复 <span
                                 th:text="${question.viewCount}"></span> 次浏览 <span
-                                th:text="${#dates.format(question.gmtCreate,'yyyy-MM-dd HH:mm')}"></span> •
+                                th:text="${#dates.format(question.gmtCreate,'yyyy-MM-dd HH:mm')}">
+
+                        </span> •
                         <a th:href="@{'/publish/'+${question.id}}" class="community-menu"
                            th:if="${session.user != null && session.user.id == question.creator}">
                         <span class="glyphicon glyphicon-pencil" aria-hidden="true">编辑</span>
@@ -50,6 +52,8 @@
                                th:text="${notification.outerTitle}">
                             </a>
                             <span class="label label-danger" th:if="${notification.status == 0}">未读</span>
+                            <span class="pull-right text-dsc" th:text="${#dates.format(notification.gmtCreate,'yyyy-MM-dd HH:mm')}"></span>
+
                         </p>
                     </div>
                 </div>
