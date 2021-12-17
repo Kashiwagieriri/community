@@ -14,7 +14,9 @@ public class WebConfig implements WebMvcConfigurer {
     private SessionInterceptor sessionInterceptor;
 
     @Override
-    public void addInterceptors(InterceptorRegistry registry){
-        registry.addInterceptor(sessionInterceptor).addPathPatterns("/**");
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(sessionInterceptor)
+                .addPathPatterns("/**")
+                .excludePathPatterns("/callback/**", "/logout");
     }
 }
