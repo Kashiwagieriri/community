@@ -12,9 +12,21 @@
 <body>
 <div th:insert="~{navigation :: nav}"></div>
 <div class="jumbotron">
-    <h1>error</h1>
-    <p th:text="${message}">error</p>
-    <p><a class="btn btn-primary btn-lg" href="/" role="button">back to index</a></p>
+    <h1>出错了！</h1>
+    <p th:text="${message}" id="show">error</p>
+    <p><a class="btn btn-primary btn-lg" href="/" role="button">返回首页</a></p>
 </div>
 </body>
+<script>
+    var t = 3;//设定跳转的时间
+    setInterval("refer()", 2000); //启动1秒定时
+    function refer() {
+        if (t == 0) {
+            location = "/"; //#设定跳转的链接地址
+        }
+        document.getElementById('show').innerHTML = "" + t + "秒后跳转"; // 显示倒计时
+        t--; // 计数器递减
+    }
+</script>
+
 </html>
