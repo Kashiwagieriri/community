@@ -3,9 +3,6 @@ package com.example.demo.dto;
 import com.example.demo.exception.CustomizeErrorCode;
 import com.example.demo.exception.CustomizeException;
 import lombok.Data;
-import org.w3c.dom.stylesheets.LinkStyle;
-
-import java.util.List;
 
 @Data
 public class ResultDTO<T> {
